@@ -6,19 +6,13 @@ import logging
 from typing import Optional
 
 import numpy as np
+import astra
 
 from pylops import LinearOperator
-from pylops.utils import deps
 from pylops.utils.decorators import reshaped
 from pylops.utils.typing import DTypeLike, InputDimsLike, NDArray
 
 logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.WARNING)
-
-
-astra_message = deps.astra_import("the astra module")
-
-if astra_message is None:
-    import astra
 
 
 class CT2D(LinearOperator):
@@ -95,9 +89,7 @@ class CT2D(LinearOperator):
             dtype: DTypeLike = "float64",
             name: str = "C",
     ) -> None:
-        if astra_message is not None:
-            raise NotImplementedError(astra_message)
-
+        
         # create volume and projection geometries
         self.vol_geom = astra.create_vol_geom(dims)
         if proj_geom_type == "parallel":
