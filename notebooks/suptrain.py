@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from tqdm.notebook import tqdm
 
 
 def train(model, criterion, optimizer, data_loader, device='cpu', plotflag=False):
