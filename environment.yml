@@ -1,0 +1,28 @@
+name: da2023
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - astra-toolbox
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pylops
+  - matplotlib
+  - ipython
+  - jupyter
+  - cupy
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.7
+  - astra-toolbox
+  - scikit-learn
+  - tqdm
+  - pip:
+    - pyproximal
+    - torchinfo
+
