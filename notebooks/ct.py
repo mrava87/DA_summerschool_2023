@@ -6,6 +6,7 @@ import logging
 from typing import Optional
 
 import numpy as np
+import torch
 import astra
 
 from pylops import LinearOperator
@@ -14,6 +15,15 @@ from pylops.utils.typing import DTypeLike, InputDimsLike, NDArray
 
 logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.WARNING)
 
+
+def astra_projector():
+    """Choose astra projector based on availability of GPU
+    """
+    if torch.cuda.is_available():
+        return 'cuda'
+    else:
+        return 'strip'
+     
 
 class CT2D(LinearOperator):
     r"""2D Computerized Tomography
