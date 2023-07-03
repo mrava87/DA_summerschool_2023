@@ -11,8 +11,8 @@ Several tutorials are presented during the course in the form of Jupyter noteboo
 
 | Session   | Exercise (Github) | Exercise (Colab) |
 |-----------|------------------|------------------|
-| EX0: Prepare brain dataset | [Link](notebooks/Prepare_brain_dataset.ipynb) | (http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/Prepare_brain_dataset.ipynb)  |
-| EX1: Prepare brain-fbp dataset | [Link](notebooks/Prepare_brainfbp_dataset.ipynb) | (http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/Prepare_brainfbp_dataset.ipynb)  |
+| EX0: Prepare brain dataset | [Link](notebooks/Prepare_brain_dataset.ipynb) |  |
+| EX1: Prepare brain-fbp dataset | [Link](notebooks/Prepare_brainfbp_dataset.ipynb) |  |
 | EX2: Variational CTscan imaging | [Link](notebooks/Variational_ctscanimaging.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/Variational_ctscanimaging.ipynb)  |
 | EX3: Supervised Learning for CTscan imaging | [Link](notebooks/Supervised_ctscanimaging.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/Supervised_ctscanimaging.ipynb)  |
 | EX4: DIP CTscan imaging | [Link](notebooks/DIP_ctscanimaging.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/DIP_ctscanimaging.ipynb)  |
