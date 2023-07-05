@@ -30,7 +30,9 @@ def train(model, criterion, optimizer, data_loader, device='cpu', plotflag=False
     """
     model.train()
     loss = 0
-    for X, y in tqdm(data_loader):
+    pbar = tqdm(data_loader)
+    
+    for ibatch, (X, y) in enumerate(pbar):
         X, y = X.to(device), y.to(device)
         optimizer.zero_grad()
         yprob = model(X)
@@ -38,8 +40,9 @@ def train(model, criterion, optimizer, data_loader, device='cpu', plotflag=False
         ls.backward()
         optimizer.step()
         loss += ls.item()
+        pbar.set_description(f"Train: ")
+        pbar.set_postfix({"batch_loss": ls.item(), "avg_loss": loss / (ibatch+1)})
     loss /= len(data_loader)
-    
     return loss
 
 
@@ -67,11 +70,15 @@ def evaluate(model, criterion, data_loader, device='cpu'):
     """
     model.eval()
     loss = 0
-    for X, y in tqdm(data_loader):
+    pbar = tqdm(data_loader)
+    
+    for ibatch, (X, y) in enumerate(pbar):
         X, y = X.to(device), y.to(device)
         with torch.no_grad(): # use no_grad to avoid making the computational graph...
             yprob = model(X)
             ls = criterion(yprob, y)
         loss += ls.item()
+        pbar.set_description(f"Valid: ")
+        pbar.set_postfix({"batch_loss": ls.item(), "avg_loss": loss / (ibatch+1)})
     loss /= len(data_loader)
     return loss
