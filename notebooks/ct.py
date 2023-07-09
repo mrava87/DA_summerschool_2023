@@ -16,13 +16,13 @@ from pylops.utils.typing import DTypeLike, InputDimsLike, NDArray
 logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.WARNING)
 
 
-def astra_projector():
+def astra_projector(device):
     """Choose astra projector based on availability of GPU
     """
-    if torch.cuda.is_available():
-        return 'cuda'
-    else:
+    if device == 'cpu':
         return 'strip'
+    else:
+        return 'cuda'
      
 
 class CT2D(LinearOperator):
