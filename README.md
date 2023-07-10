@@ -17,7 +17,7 @@ Several tutorials are presented during the course in the form of Jupyter noteboo
 | EX3: Supervised Learning for CTscan imaging | [Link](notebooks/Supervised_ctscanimaging.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/Supervised_ctscanimaging.ipynb)  |
 | EX4: DIP CTscan imaging | [Link](notebooks/DIP_ctscanimaging.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/DIP_ctscanimaging.ipynb)  |
 | EX5: PnP for CTscan imaging | [Link](notebooks/PnP_ctscanimaging.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/PnP_ctscanimaging.ipynb)  |
-| EX6: Learned iterative solver for CTscan imaging | [Link](notebooks/Learnedit_ctscanimaging.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/Learnedit_ctscanimaging.ipynb)  |
+| EX6: Learned iterative solver for CTscan imaging | [Link](notebooks/LearnedIt_ctscanimaging.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/mrava87/DA_summerschool_2023/blob/main/notebooks/LearnedIt_ctscanimaging.ipynb)  |
 
 
 ## Getting started
