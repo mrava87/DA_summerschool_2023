@@ -1,0 +1,25 @@
+name: da2023cpu
+channels:
+  - conda-forge
+  - defaults
+  - astra-toolbox
+  - pytorch
+dependencies:
+  - python=3.9.12
+  - pip
+  - numpy
+  - scipy
+  - pylops
+  - matplotlib
+  - pytorch==1.13.1
+  - torchvision==0.14.1
+  - torchaudio==0.13.1
+  - astra-toolbox
+  - scikit-learn
+  - tqdm
+  - pip:
+    - pyproximal
+    - torchinfo
+    - jupyter==1.0.0
+    - nbconvert==6.5.0
+    - notebook==6.4.8
