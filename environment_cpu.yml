@@ -20,6 +20,7 @@ dependencies:
   - pip:
     - pyproximal
     - torchinfo
-    - jupyter==1.0.0
-    - nbconvert==6.5.0
-    - notebook==6.4.8
+    - h5py
+    - jupyter==1.0.0  # ugly but needed for mac - current jupyter is very slow
+    - nbconvert==6.5.0  # ugly but needed for mac - current jupyter is very slow
+    - notebook==6.4.8  # ugly but needed for mac - current jupyter is very slow
