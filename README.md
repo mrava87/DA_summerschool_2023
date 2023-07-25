@@ -4,7 +4,7 @@ Material for course on **Deep Learning in Scientific Inverse Problems**, to be t
 at [Summer school on Data Assimilation](https://data-assimilation.com).
 
 ## Teaching Material
-The main teaching material is available in the form of Jupiter slides. Simply type ``jupyter nbconvert Lecture.ipynb --to slides --post serve`` to access the slides.
+The main teaching material is available in the form of Jupiter slides. Simply type ``jupyter nbconvert Lecture.ipynb --to slides --post serve --embed-images`` to access the slides.
 
 ## Notebooks
 Several tutorials are presented during the course in the form of Jupyter notebooks.
